@@ -12,6 +12,7 @@ exports.up = async (knex) => {
       tbl.string("description", 200).notNullable();
       tbl.decimal("price").notNullable();
       tbl.integer("rating").notNullable();
+      tbl.string("image");
     });
 };
 
